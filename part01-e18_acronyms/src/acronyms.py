@@ -1,8 +1,32 @@
 #!/usr/bin/env python3
 
-
+# use filter, isupper, translate, maketrans, split
 def acronyms(s):
-    return []
+
+    newList = []
+    temp_letters = ""
+
+    split_list = s.split()
+
+
+
+    stripped_list = (split_list).strip("()")
+
+    for x in stripped_list:
+        
+        if len(x) > 6 and x.isupper():
+            print(x)
+
+
+
+    # print(a)
+ 
+
+
+
+
+
+    return 
 
 def main():
     print(acronyms("""For the purposes of the EU General Data Protection Regulation (GDPR), the controller of your personal information is International Business Machines Corporation (IBM Corp.), 1 New Orchard Road, Armonk, New York, United States, unless indicated otherwise. Where IBM Corp. or a subsidiary it controls (not established in the European Economic Area (EEA)) is required to appoint a legal representative in the EEA, the representative for all such cases is IBM United Kingdom Limited, PO Box 41, North Harbour, Portsmouth, Hampshire, United Kingdom PO6 3AU."""))
